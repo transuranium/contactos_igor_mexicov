@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Igor Mexicov — ссылки</title>
+  <meta name="description" content="Ссылки на мои каналы и соцсети: YouTube, TikTok, Instagram, Facebook." />
+
+  <style>
+    :root{
+      --bg1:#0b1220;
+      --bg2:#0f1b2e;
+      --card:#111c30cc;
+      --stroke:#2a3b58;
+      --text:#e7eefc;
+      --muted:#a9bbd9;
+      --accent:#4aa3ff;
+      --accent2:#7bd3ff;
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --radius: 18px;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 20% 10%, rgba(74,163,255,.22), transparent 60%),
+        radial-gradient(900px 600px at 90% 30%, rgba(123,211,255,.14), transparent 55%),
+        linear-gradient(180deg, var(--bg1), var(--bg2));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:22px;
+    }
+
+    .wrap{
+      width:min(820px, 100%);
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--stroke);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      backdrop-filter: blur(10px);
+    }
+
+    .header{
+      padding:28px 26px 18px;
+      border-bottom:1px solid rgba(42,59,88,.55);
+      display:flex;
+      gap:16px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+
+    .title{
+      margin:0;
+      font-size: clamp(22px, 2.6vw, 30px);
+      letter-spacing:.2px;
+      line-height:1.1;
+    }
+
+    .subtitle{
+      margin:8px 0 0;
+      color:var(--muted);
+      font-size:14px;
+      max-width: 60ch;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 12px;
+      border:1px solid rgba(42,59,88,.7);
+      border-radius:999px;
+      color:var(--muted);
+      font-size:13px;
+      background: rgba(9,14,26,.35);
+      white-space:nowrap;
+    }
+
+    .dot{
+      width:10px; height:10px; border-radius:50%;
+      background: radial-gradient(circle at 30% 30%, var(--accent2), var(--accent));
+      box-shadow: 0 0 18px rgba(74,163,255,.55);
+    }
+
+    .content{
+      padding:22px 26px 26px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap:14px;
+    }
+
+    @media (max-width: 620px){
+      .grid{ grid-template-columns: 1fr; }
+      .subtitle{ max-width: 100%; }
+    }
+
+    .btn{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      padding:16px 16px;
+      border-radius:14px;
+      border:1px solid rgba(42,59,88,.85);
+      background: linear-gradient(180deg, rgba(17,28,48,.9), rgba(12,20,36,.9));
+      text-decoration:none;
+      color:var(--text);
+      transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+      box-shadow: 0 8px 18px rgba(0,0,0,.25);
+    }
+
+    .btn:hover{
+      transform: translateY(-2px);
+      border-color: rgba(74,163,255,.75);
+      box-shadow: 0 14px 28px rgba(0,0,0,.35);
+    }
+
+    .left{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width:0;
+    }
+
+    .icon{
+      width:42px; height:42px;
+      border-radius: 12px;
+      display:grid; place-items:center;
+      background: radial-gradient(circle at 30% 30%, rgba(123,211,255,.25), rgba(74,163,255,.08));
+      border:1px solid rgba(74,163,255,.25);
+      flex:0 0 auto;
+    }
+
+    .labelWrap{ min-width:0; }
+    .label{
+      font-weight:700;
+      letter-spacing:.2px;
+      margin:0;
+      font-size:16px;
+      line-height:1.2;
+    }
+
+    .url{
+      margin:4px 0 0;
+      color: var(--muted);
+      font-size:12px;
+      overflow:hidden;
+      text-overflow: ellipsis;
+      white-space:nowrap;
+      max-width: 42ch;
+    }
+
+    .arrow{
+      font-size:18px;
+      color: rgba(231,238,252,.75);
+      flex:0 0 auto;
+    }
+
+    .footer{
+      padding:14px 26px 20px;
+      color: rgba(169,187,217,.75);
+      font-size:12px;
+      border-top:1px solid rgba(42,59,88,.55);
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .footer a{
+      color: rgba(123,211,255,.95);
+      text-decoration:none;
+    }
+
+    /* маленькая “подсветка” сверху */
+    .shine{
+      height: 3px;
+      background: linear-gradient(90deg, transparent, rgba(74,163,255,.9), rgba(123,211,255,.85), transparent);
+      opacity:.85;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <div class="card">
+      <div class="shine"></div>
+
+      <header class="header">
+        <div>
+          <h1 class="title">Igor Mexicov</h1>
+          <p class="subtitle">Mis canales y redes sociales a un clic de distancia.</p>
+        </div>
+        <div class="badge"><span class="dot"></span>Los enlaces</div>
+      </header>
+
+      <section class="content">
+        <div class="grid">
+
+          <a class="btn" href="https://www.youtube.com/@IgorMexicov-369" target="_blank" rel="noopener noreferrer">
+            <div class="left">
+              <div class="icon" aria-hidden="true">▶️</div>
+              <div class="labelWrap">
+                <p class="label">YouTube</p>
+              </div>
+            </div>
+            <div class="arrow" aria-hidden="true">↗</div>
+          </a>
+
+          <a class="btn" href="https://www.tiktok.com/@igor_mexicov" target="_blank" rel="noopener noreferrer">
+            <div class="left">
+              <div class="icon" aria-hidden="true">🎵</div>
+              <div class="labelWrap">
+                <p class="label">TikTok</p>
+              </div>
+            </div>
+            <div class="arrow" aria-hidden="true">↗</div>
+          </a>
+
+          <a class="btn" href="https://www.instagram.com/igor_mexicov/" target="_blank" rel="noopener noreferrer">
+            <div class="left">
+              <div class="icon" aria-hidden="true">📸</div>
+              <div class="labelWrap">
+                <p class="label">Instagram</p>
+              </div>
+            </div>
+            <div class="arrow" aria-hidden="true">↗</div>
+          </a>
+
+          <a class="btn" href="https://www.facebook.com/igor.mexicov/" target="_blank" rel="noopener noreferrer">
+            <div class="left">
+              <div class="icon" aria-hidden="true">👤</div>
+              <div class="labelWrap">
+                <p class="label">Facebook</p>
+              </div>
+            </div>
+            <div class="arrow" aria-hidden="true">↗</div>
+          </a>
+
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>© <span id="y"></span> Igor Mexicov</span>
+        <span> <a href="#" onclick="navigator.clipboard?.writeText(location.href);return false;">Copiar enlace</a></span>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
